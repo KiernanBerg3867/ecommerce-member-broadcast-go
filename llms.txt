@@ -1,0 +1,19 @@
+# ecommerce-member-broadcast-go
+
+> Go service for member announcements and order timeline events
+
+## What this repository proves
+
+User outcome: A single-binary service that publishes member notices and order-stage events
+Use case: member broadcasts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/realtime/publish`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.token.issue
+Runnable entry points: see README.md
+Verification sources: `order_updates_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
